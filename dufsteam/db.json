@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "name": "aaaaa",
+      "description": "ddddd",
+      "price": "1243$",
+      "img": "https://fotointeres.ru/wp-content/uploads/2014/03/Color-dreams.jpg",
+      "id": 3
+    },
+    {
+      "name": "fgfd",
+      "description": "dfgdfgdf",
+      "price": "11110$",
+      "img": "https://fotointeres.ru/wp-content/uploads/2014/03/Color-dreams.jpg",
+      "id": 4
+    },
+    {
+      "name": "wewrefer",
+      "description": "ergerg",
+      "price": "3254235245$",
+      "img": "https://w-dog.ru/wallpapers/0/99/481940120282294/ferrari-enzo-zholtaya-mashina.jpg",
+      "id": 5
+    },
+    {
+      "name": "EWFWEF",
+      "description": "WEFWEF",
+      "price": "234324$",
+      "img": "https://vsegda-pomnim.com/uploads/posts/2022-04/1649133264_9-vsegda-pomnim-com-p-priroda-krasivo-foto-10.jpg",
+      "id": 6
+    },
+    {
+      "name": "RGFREGFDR",
+      "description": "DGGDTRHTH",
+      "price": "464545",
+      "img": "https://vsegda-pomnim.com/uploads/posts/2022-04/1649133264_9-vsegda-pomnim-com-p-priroda-krasivo-foto-10.jpg",
+      "id": 7
+    }
+  ]
+}
