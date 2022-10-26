@@ -52,27 +52,32 @@ export default function About() {
                 </TableRow>
               </TableHead>
               <TableBody>
-                {data.map((row) => (
-                  <TableRow
-                    key={row.name}
-                    sx={{ boxShadow: "1px 1px 15px gray", }}
-                  >
-                    <TableCell component="div" scope="row" >
-                      <img src={row.img} width="100" alt="" />
-                    </TableCell>
-                    <TableCell align="right">{row.name}</TableCell>
-                    <TableCell align="right">{row.description}</TableCell>
-                    <TableCell align="right">{row.price}</TableCell>
-                    <TableCell align="right">
-                      <ButtonGroup variant="contained" aria-label="outlined primary button group">
-                        <Link to={row.id ? `/about/edit/${row.id}` : null}>
-                          <Button>Edit</Button>
-                        </Link>
-                        <Button onClick={() => deleteData(row.id)}>Delete</Button>
-                      </ButtonGroup>
-                    </TableCell>
-                  </TableRow>
-                ))}
+                {data.map((row) => {
+                  console.log(row)
+                  return (
+                    <>
+                      <TableRow
+                        key={row.name}
+                        sx={{ boxShadow: "1px 1px 15px gray", }}
+                      >
+                        <TableCell component="div" scope="row" >
+                          <img src={row.img} width="100" alt="" />
+                        </TableCell>
+                        <TableCell align="right">{row.name}</TableCell>
+                        <TableCell align="right">{row.description}</TableCell>
+                        <TableCell align="right">{row.price}</TableCell>
+                        <TableCell align="right">
+                          <ButtonGroup variant="contained" aria-label="outlined primary button group">
+                            <Link to={row.id ? `/about/edit/${row.id}` : null}>
+                              <Button>Edit</Button>
+                            </Link>
+                            <Button onClick={() => deleteData(row.id)}>Delete</Button>
+                          </ButtonGroup>
+                        </TableCell>
+                      </TableRow>
+                    </>
+                  )
+                })}
               </TableBody>
             </Table>
           </TableContainer>
