@@ -17,7 +17,6 @@ export default function Product() {
     axios.get("http://localhost:3000/data")
       .then(res => {
         setData(res.data);
-        console.log(res);
       })
   }
 
