@@ -1,8 +1,7 @@
 import Home from "../Home/Home";
 import Product from "../Product/Product";
-import About from "../About/About"
-import Icons from "./routersicon"
-
+import About from "../About/About";
+import Icons from "./routersicon";
 
 const MainRoutes = [{
   title: "Home",
