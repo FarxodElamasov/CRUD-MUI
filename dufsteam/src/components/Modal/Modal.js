@@ -5,7 +5,6 @@ import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { makeStyles } from '@mui/material';
 
 const style = {
   position: 'absolute',
@@ -19,13 +18,10 @@ const style = {
   borderRadius: "10px"
 };
 
-
-
 export default function Modal2(props) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-
 
   return (
     <>

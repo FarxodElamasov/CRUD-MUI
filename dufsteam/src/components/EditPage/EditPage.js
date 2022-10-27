@@ -12,7 +12,6 @@ export default function EditPage() {
     const { id } = useParams();
     const navigate = useNavigate();
 
-
     console.log(id);
 
     const getAllDataId = async (id) => {
@@ -26,9 +25,7 @@ export default function EditPage() {
             })
     }
 
-    useEffect(() => {
-        getAllDataId(id)
-    }, [])
+    useEffect(() => { getAllDataId(id) }, [])
 
     const editData = async (id) => {
         const item = {
@@ -53,20 +50,15 @@ export default function EditPage() {
 
     return (
         <>
-            <Grid container spacing={2} direction="row"
-                justifyContent="center"
-                alignItems="center">
+            <Grid container spacing={2} direction="row" justifyContent="center" alignItems="center">
                 <Grid item xs={8} >
                     <h1>Edit Page</h1>
                     <form key={data.id}>
                         <Box
                             component="form"
-                            sx={{
-                                '& > :not(style)': { m: 1, width: '100%' },
-                            }}
+                            sx={{ '& > :not(style)': { m: 1, width: '100%' } }}
                             noValidate
-                            autoComplete="off"
-                        >
+                            autoComplete="off">
                             <TextField id="outlined-basic" value={name} onChange={(e) => setName(e.target.value)} label="Name" variant="outlined" />
                             <TextField id="outlined-basic" value={description} onChange={(e) => setDescription(e.target.value)} label="Description" variant="outlined" />
                             <TextField id="outlined-basic" value={price} onChange={(e) => setPrice(e.target.value)} label="Price" variant="outlined" />
