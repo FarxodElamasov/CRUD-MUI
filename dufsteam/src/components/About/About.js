@@ -1,14 +1,14 @@
-import { Button, Grid, ButtonGroup } from '@mui/material'
-import Table from '@mui/material/Table';
+import React, { useEffect, useState } from 'react';
+import { Button, Grid, ButtonGroup } from '@mui/material';
+import TableContainer from '@mui/material/TableContainer';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
-import React, { useEffect, useState } from 'react'
-import axios from 'axios';
 import { Link } from 'react-router-dom';
+import Table from '@mui/material/Table';
+import Paper from '@mui/material/Paper';
+import axios from 'axios';
 
 export default function About() {
 
@@ -31,15 +31,11 @@ export default function About() {
       })
   }
 
-  useEffect(() => {
-    getAllData();
-  }, [])
+  useEffect(() => { getAllData() }, [])
 
   return (
     <>
-      <Grid container spacing={2} direction="row"
-        justifyContent="center"
-        alignItems="center">
+      <Grid container spacing={2} direction="row" justifyContent="center" alignItems="center">
         <Grid item xs={8} >
           <TableContainer component={Paper}>
             <Table sx={{ minWidth: 650, border: "20px", boxShadow: "1px 1px 15px gray" }} aria-label="simple table">
@@ -53,13 +49,9 @@ export default function About() {
               </TableHead>
               <TableBody>
                 {data.map((row) => {
-                  console.log(row)
                   return (
                     <>
-                      <TableRow
-                        key={row.name}
-                        sx={{ boxShadow: "1px 1px 15px gray", }}
-                      >
+                      <TableRow key={row.name} sx={{ boxShadow: "1px 1px 15px gray", }}>
                         <TableCell component="div" scope="row" >
                           <img src={row.img} width="100" alt="" />
                         </TableCell>

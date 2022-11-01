@@ -1,7 +1,7 @@
-import { Box, Button, Grid, TextField } from '@mui/material'
-import axios from 'axios'
 import React, { useState } from 'react'
+import { Box, Button, Grid, TextField } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
 
 export default function Home() {
   const navigate = useNavigate()
@@ -22,6 +22,7 @@ export default function Home() {
       const res = await axios.post("http://localhost:3000/data", data)
 
       name === "" ? alert('toldir') : PostFunction(res)
+      
       function PostFunction(res) {
         if (res.status === 201) {
           setName("")

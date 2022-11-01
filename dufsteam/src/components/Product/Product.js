@@ -5,7 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea, CardActions, Grid } from '@mui/material';
 import axios from 'axios';
-import Modal2 from "../Modal/Modal"
+import Modal2 from "../Modal/Modal";
 
 
 export default function Product() {
@@ -20,9 +20,7 @@ export default function Product() {
       })
   }
 
-  useEffect(() => {
-    getData()
-  }, [])
+  useEffect(() => { getData() }, [])
   return (
     <Grid container spacing={2} direction="row" justifyContent="center" alignItems="center">
       {data.map((elem) => {
