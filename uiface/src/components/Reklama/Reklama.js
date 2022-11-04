@@ -4,6 +4,10 @@ import "./RekStyle.css"
 import CaruCard from './CaruCard';
 import RasmLink from './RasmLink';
 import LongImg from './LongImg';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/react-splide/css';
+import '@splidejs/react-splide/css/sea-green';
+
 
 
 export default function Reklama() {
@@ -25,23 +29,46 @@ export default function Reklama() {
             </Grid>
 
 
-            <Grid container spacing={-27} direction="row" justifyContent="end" alignItems="center">
-                <Grid item xs={2}>
-                    <CaruCard />
-                </Grid>
-                <Grid item xs={2}>
-                    <CaruCard />
-                </Grid>
-                <Grid item xs={2}>
-                    <CaruCard />
-                </Grid>
-                <Grid item xs={2}>
-                    <CaruCard />
-                </Grid>
-                <Grid item xs={2}>
-                    <CaruCard />
-                </Grid>
-            </Grid>
+            <Splide>
+                <SplideSlide>
+                    <Grid container direction="row" justifyContent="space-between" alignItems="center">
+                        <Grid item xs={2}>
+                            <CaruCard />
+                        </Grid>
+                        <Grid item xs={2}>
+                            <CaruCard />
+                        </Grid>
+                        <Grid item xs={2}>
+                            <CaruCard />
+                        </Grid>
+                        <Grid item xs={2}>
+                            <CaruCard />
+                        </Grid>
+                        <Grid item xs={2}>
+                            <CaruCard />
+                        </Grid>
+                    </Grid>
+                </SplideSlide>
+                <SplideSlide>
+                    <Grid container direction="row" justifyContent="space-between" alignItems="center">
+                        <Grid item xs={2}>
+                            <CaruCard />
+                        </Grid>
+                        <Grid item xs={2}>
+                            <CaruCard />
+                        </Grid>
+                        <Grid item xs={2}>
+                            <CaruCard />
+                        </Grid>
+                        <Grid item xs={2}>
+                            <CaruCard />
+                        </Grid>
+                        <Grid item xs={2}>
+                            <CaruCard />
+                        </Grid>
+                    </Grid>
+                </SplideSlide>
+            </Splide>
 
             <Grid container spacing={-28} direction="row" justifyContent="end" alignItems="center">
                 <Grid item xs={10}>

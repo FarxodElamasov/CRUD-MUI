@@ -9,10 +9,10 @@ export default function Header() {
         <>
             <Splide>
                 <SplideSlide>
-                    <img style={{width: "100%", height: "500px"}} src="https://avatars.mds.yandex.net/i?id=2a00000179efe3364c0f8edefe48ea775ece-3738935-images-thumbs&n=13" alt="Imag" />
+                    <img style={{width: "100%", height: "500px", borderRadius: "20px"}} src="https://di-uploads-pod1.dealerinspire.com/rayskillmanford/uploads/2020/05/Ford-Mustang-Greenwood-IN-1.png" alt="Imag" />
                 </SplideSlide>
                 <SplideSlide>
-                    <img style={{width: "100%", height: "500px"}} src="https://miro.medium.com/max/1200/1*6vBPvwDslnrpyry2CWTwKQ.jpeg" alt="Imag" />
+                    <img style={{width: "100%", height: "500px", borderRadius: "20px"}} src="https://unreasonablegroup.com/articles/wp-content/uploads/2016/08/VivekWadhwa_FutureNow-2.jpg" alt="Imag" />
                 </SplideSlide>
             </Splide>
         </>
