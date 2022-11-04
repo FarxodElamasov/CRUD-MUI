@@ -8,7 +8,7 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 export default function CaruCard() {
     return (
-        <Card sx={{ maxWidth: 185 }}>
+        <Card >
             <CardActionArea>
                 <CardMedia
                     width="100%"
@@ -32,7 +32,7 @@ export default function CaruCard() {
             </CardActionArea>
             <CardActions>
                 <Stack direction="row" >
-                    <Button variant="contained" style={{marginLeft: "9.5px", marginTop: "-18px"}}><AddShoppingCartIcon />Add to Cart</Button>
+                    <Button  style={{marginLeft: "9.5px", marginTop: "-18px", background: "#f48e00", fontSize: "12px", color: "white"}}><AddShoppingCartIcon />Add to Cart</Button>
                 </Stack>
             </CardActions>
         </Card>
