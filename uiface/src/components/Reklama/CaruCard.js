@@ -25,13 +25,14 @@ export default function CaruCard() {
                         310 km/s , 14 soat,
                         gray solutions
                     </Typography>
-                    <Typography style={{marginTop: "10px"}} variant="h6" fontWeight="600" color="green">
+                    <Typography style={{ marginTop: "10px" }} variant="h6" fontWeight="600" color="green">
                         $ 300 000
                     </Typography>
                 </CardContent>
             </CardActionArea>
             <CardActions>
                 <Stack direction="row" >
+                    <Button variant="contained" style={{ marginLeft: "9.5px", marginTop: "-18px" }}><AddShoppingCartIcon />Add to Cart</Button>
                     <Button  style={{marginLeft: "9.5px", marginTop: "-18px", background: "#f48e00", fontSize: "12px", color: "white"}}><AddShoppingCartIcon />Add to Cart</Button>
                 </Stack>
             </CardActions>
