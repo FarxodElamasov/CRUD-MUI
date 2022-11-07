@@ -5,6 +5,7 @@ import '@splidejs/react-splide/css/sea-green';
 import { Grid, Typography } from '@mui/material';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
+// import CaruCard from 
 import CardMedia from '@mui/material/CardMedia';
 import { Button, CardActionArea, CardActions, Stack } from '@mui/material';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
@@ -20,7 +21,7 @@ export default function Product() {
           <Splide>
             <SplideSlide>
               <Typography component="div" sx={{ display: "flex" }}>
-                <Card sx={{ maxWidth: 225 }}>
+                <Card >
                   <CardActionArea>
                     <CardMedia
                       width="100%"
@@ -48,7 +49,7 @@ export default function Product() {
                     </Stack>
                   </CardActions>
                 </Card>
-                <Card sx={{ maxWidth: 225 }}>
+                <Card >
                   <CardActionArea>
                     <CardMedia
                       width="100%"
@@ -76,7 +77,7 @@ export default function Product() {
                     </Stack>
                   </CardActions>
                 </Card>
-                <Card sx={{ maxWidth: 225 }}>
+                <Card >
                   <CardActionArea>
                     <CardMedia
                       width="100%"
@@ -104,7 +105,7 @@ export default function Product() {
                     </Stack>
                   </CardActions>
                 </Card>
-                <Card sx={{ maxWidth: 225 }}>
+                <Card >
                   <CardActionArea>
                     <CardMedia
                       width="100%"
@@ -132,7 +133,7 @@ export default function Product() {
                     </Stack>
                   </CardActions>
                 </Card>
-                <Card sx={{ maxWidth: 225 }}>
+                <Card >
                   <CardActionArea>
                     <CardMedia
                       width="100%"
@@ -164,7 +165,7 @@ export default function Product() {
             </SplideSlide>
             <SplideSlide>
             <Typography component="div" sx={{ display: "flex" , justifyContent: "spaceBetween" }}>
-              <Card sx={{ maxWidth: 225 }}>
+              <Card >
                 <CardActionArea>
                   <CardMedia
                     width="100%"
@@ -192,7 +193,7 @@ export default function Product() {
                   </Stack>
                 </CardActions>
               </Card>
-              <Card sx={{ maxWidth: 225 }}>
+              <Card >
                 <CardActionArea>
                   <CardMedia
                     width="100%"
@@ -220,7 +221,7 @@ export default function Product() {
                   </Stack>
                 </CardActions>
               </Card>
-              <Card sx={{ maxWidth: 225 }}>
+              <Card >
                 <CardActionArea>
                   <CardMedia
                     width="100%"
@@ -248,7 +249,7 @@ export default function Product() {
                   </Stack>
                 </CardActions>
               </Card>
-              <Card sx={{ maxWidth: 225 }}>
+              <Card >
                 <CardActionArea>
                   <CardMedia
                     width="100%"
@@ -276,7 +277,7 @@ export default function Product() {
                   </Stack>
                 </CardActions>
               </Card>
-              <Card sx={{ maxWidth: 225 }}>
+              <Card >
                 <CardActionArea>
                   <CardMedia
                     width="100%"
