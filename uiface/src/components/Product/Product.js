@@ -57,7 +57,7 @@ export default function Product() {
                       </CardActionArea>
                       <CardActions>
                         <Stack direction="row" >
-                          <Button variant="contained" style={{ marginLeft: "9.5px", marginTop: "-18px" }}><AddShoppingCartIcon />Add to Cart</Button>
+                          <Button  style={{ marginLeft: "9.5px", marginTop: "-18px", bacground:"#f48e00", color: "white" }}><AddShoppingCartIcon />Add to Cart</Button>
                         </Stack>
                       </CardActions>
                     </Card>
@@ -96,7 +96,7 @@ export default function Product() {
                       </CardActionArea>
                       <CardActions>
                         <Stack direction="row" >
-                          <Button variant="contained" style={{ marginLeft: "9.5px", marginTop: "-18px" }}><AddShoppingCartIcon />Add to Cart</Button>
+                          <Button variant="contained" style={{ marginLeft: "9.5px", marginTop: "-18px", background: "#f48e00", color: "white" }}><AddShoppingCartIcon />Add to Cart</Button>
                         </Stack>
                       </CardActions>
                     </Card>
