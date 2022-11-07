@@ -32,7 +32,6 @@ export default function CaruCard() {
             </CardActionArea>
             <CardActions>
                 <Stack direction="row" >
-                    <Button variant="contained" style={{ marginLeft: "9.5px", marginTop: "-18px" }}><AddShoppingCartIcon />Add to Cart</Button>
                     <Button  style={{marginLeft: "9.5px", marginTop: "-18px", background: "#f48e00", fontSize: "12px", color: "white"}}><AddShoppingCartIcon />Add to Cart</Button>
                 </Stack>
             </CardActions>

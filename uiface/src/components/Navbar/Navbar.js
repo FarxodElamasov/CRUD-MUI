@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Grid } from '@mui/material';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+
 import SearchSharpIcon from '@mui/icons-material/SearchSharp';
 import FavoriteBorderSharpIcon from '@mui/icons-material/FavoriteBorderSharp';
 import MultipleStopIcon from '@mui/icons-material/MultipleStop';
@@ -11,7 +12,6 @@ import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import LogoutIcon from '@mui/icons-material/Logout';
 
 export default function Navbar() {
-
   return (
     <>
       <Typography component="div" sx={{ display: "flex", background: "#f48e00", alignItems: "center", padding: "0 20px", color: "#fff" }}>
