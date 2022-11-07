@@ -1,26 +1,15 @@
 {
   "data": [
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
       "name": "vvvvvv",
       "description": "dddd",
-=======
-=======
->>>>>>> 503f5008bf4758ed53af31b2382197803d4bda2b
       "name": "vvvvvvdscacdsf",
       "description": "ddddd",
->>>>>>> 226b3a360715955d9eb2e7c3272acb99fa42fdba
       "price": "1243$",
       "img": "https://fotointeres.ru/wp-content/uploads/2014/03/Color-dreams.jpg",
       "id": 3
     },
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 503f5008bf4758ed53af31b2382197803d4bda2b
       "name": "Saloo",
       "description": "dfgdfgdf",
       "price": "11110$",
@@ -28,7 +17,6 @@
       "id": 4
     },
     {
->>>>>>> 226b3a360715955d9eb2e7c3272acb99fa42fdba
       "name": "wewrefer",
       "description": "ergerg",
       "price": "3254235245$",
