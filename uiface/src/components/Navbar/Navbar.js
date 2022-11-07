@@ -24,9 +24,9 @@ export default function Navbar() {
       <Grid container
         direction="row"
         justifyContent="center">
-        <Grid item xs={10}>
+        <Grid item xs={12}>
           <Typography component="div" sx={{ paddingTop: "30px" }}>
-            <Typography component="div" sx={{ display: "flex", alignItems: "center" }}>
+            <Typography component="div" sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", paddingLeft: "52px", paddingRight: "52px" }}>
               <Typography component="h6" sx={{ fontWeight: 700, fontSize: "20px", paddingRight: "10px" }}>Electric Cars</Typography>
 
               <button style={{
@@ -34,16 +34,20 @@ export default function Navbar() {
                 paddingRight: 35, paddingTop: 10, paddingBottom: 10, borderRadius: "5px"
               }}>
                 <AddShoppingCartIcon />Katalog </button>
-              <input placeholder="Matn kiriting" />
-              <SearchSharpIcon sx={{
-                background: "#f48e00",
-                width: "42px",
-                height: "43px",
-                color: "white",
-                borderTopRightRadius: "5px",
-                borderBottomRightRadius: "5px",
-                cursor: "pointer"
-              }} />
+
+              <div style={{ display: "flex" }}>
+                <input placeholder="Matn kiriting" />
+                <SearchSharpIcon sx={{
+                  background: "#f48e00",
+                  width: "42px",
+                  height: "43px",
+                  color: "white",
+                  borderTopRightRadius: "5px",
+                  borderBottomRightRadius: "5px",
+                  cursor: "pointer"
+                }} />
+              </div>
+
               <Typography component="div" sx={{ marginLeft: "20px", alignItems: "center" }}>
                 <FavoriteBorderSharpIcon sx={{
                   cursor: "pointer",
