@@ -5,11 +5,7 @@ import { Grid } from '@mui/material';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 
-
-
-
 export default function Navbar() {
-
   return (
     <>
       <Typography component="div" sx={{ display: "flex", background: "#f48e00", alignItems: "center", padding: "0 20px", color: "#fff" }}>

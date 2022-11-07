@@ -11,7 +11,6 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import axios from 'axios';
 
 
-
 export default function Product() {
   const [data, setData] = React.useState([])
 
@@ -20,17 +19,14 @@ export default function Product() {
       .then(list => {
         setData(list.data)
       })
-
   }
   React.useEffect(() => {
     getAllData()
   }, [])
 
 
-
   return (
     <>
-
       <Splide>
         <SplideSlide>
           <Grid container direction="row" justifyContent="space-between" alignItems="center">
