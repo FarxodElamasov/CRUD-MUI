@@ -27,6 +27,13 @@ export default function Product() {
 
   return (
     <>
+      <Grid container spacing={1} direction="row" justifyContent="center" alignItems="center">
+        <Grid item xs={9}>
+          <Typography gutterBottom variant="h5" component="div" marginTop="20px" marginBottom="15px" fontWeight="500">
+            Ommabop mahsulotlar
+          </Typography>
+        </Grid>
+      </Grid>
       <Splide>
         <SplideSlide>
           <Grid container direction="row" justifyContent="space-between" alignItems="center">
@@ -48,7 +55,7 @@ export default function Product() {
                             {item.name}
                           </Typography>
                           <Typography variant="h7" fontWeight="500" color="dark">
-                          {item.description}
+                            {item.description}
                           </Typography>
                           <Typography style={{ marginTop: "10px" }} variant="h6" fontWeight="600" color="green">
                             ${item.price}
@@ -57,7 +64,7 @@ export default function Product() {
                       </CardActionArea>
                       <CardActions>
                         <Stack direction="row" >
-                          <Button  style={{ marginLeft: "9.5px", marginTop: "-18px", bacground:"#f48e00", color: "white" }}><AddShoppingCartIcon />Add to Cart</Button>
+                          <Button style={{ marginLeft: "9.5px", marginTop: "-18px", bacground: "#f48e00", color: "white" }}><AddShoppingCartIcon />Add to Cart</Button>
                         </Stack>
                       </CardActions>
                     </Card>
@@ -69,7 +76,7 @@ export default function Product() {
         </SplideSlide>
         <SplideSlide>
           <Grid container direction="row" justifyContent="space-between" alignItems="center">
-            {data.slice(5, 0).map((item) => {
+            {data.slice(5, 10).map((item) => {
               return (
                 <>
                   <Grid item xs={2}>
@@ -87,7 +94,7 @@ export default function Product() {
                             {item.name}
                           </Typography>
                           <Typography variant="h7" fontWeight="500" color="dark">
-                          {item.description}
+                            {item.description}
                           </Typography>
                           <Typography style={{ marginTop: "10px" }} variant="h6" fontWeight="600" color="green">
                             ${item.price}
@@ -107,6 +114,96 @@ export default function Product() {
           </Grid>
         </SplideSlide>
       </Splide>
+
+
+      <Grid container spacing={1} direction="row" justifyContent="center" alignItems="center">
+        <Grid item xs={9}>
+          <Typography gutterBottom variant="h5" component="div" marginTop="20px" marginBottom="15px" fontWeight="500">
+            Chegirmali mahsulotlar
+          </Typography>
+        </Grid>
+      </Grid>
+      <Splide>
+        <SplideSlide>
+          <Grid container direction="row" justifyContent="space-between" alignItems="center">
+            {data.slice(0, 5).map((item) => {
+              return (
+                <>
+                  <Grid item xs={2}>
+                    <Card >
+                      <CardActionArea>
+                        <CardMedia
+                          width="100%"
+                          component="img"
+                          height="140"
+                          src={item.img}
+                          alt="green iguana"
+                        />
+                        <CardContent>
+                          <Typography gutterBottom variant="h6" component="div">
+                            {item.name}
+                          </Typography>
+                          <Typography variant="h7" fontWeight="500" color="dark">
+                            {item.description}
+                          </Typography>
+                          <Typography style={{ marginTop: "10px" }} variant="h6" fontWeight="600" color="green">
+                            ${item.price}
+                          </Typography>
+                        </CardContent>
+                      </CardActionArea>
+                      <CardActions>
+                        <Stack direction="row" >
+                          <Button style={{ marginLeft: "9.5px", marginTop: "-18px", bacground: "#f48e00", color: "white" }}><AddShoppingCartIcon />Add to Cart</Button>
+                        </Stack>
+                      </CardActions>
+                    </Card>
+                  </Grid>
+                </>
+              )
+            })}
+          </Grid>
+        </SplideSlide>
+        <SplideSlide>
+          <Grid container direction="row" justifyContent="space-between" alignItems="center">
+            {data.slice(5, 10).map((item) => {
+              return (
+                <>
+                  <Grid item xs={2}>
+                    <Card >
+                      <CardActionArea>
+                        <CardMedia
+                          width="100%"
+                          component="img"
+                          height="140"
+                          src={item.img}
+                          alt="green iguana"
+                        />
+                        <CardContent>
+                          <Typography gutterBottom variant="h6" component="div">
+                            {item.name}
+                          </Typography>
+                          <Typography variant="h7" fontWeight="500" color="dark">
+                            {item.description}
+                          </Typography>
+                          <Typography style={{ marginTop: "10px" }} variant="h6" fontWeight="600" color="green">
+                            ${item.price}
+                          </Typography>
+                        </CardContent>
+                      </CardActionArea>
+                      <CardActions>
+                        <Stack direction="row" >
+                          <Button variant="contained" style={{ marginLeft: "9.5px", marginTop: "-18px", background: "#f48e00", color: "white" }}><AddShoppingCartIcon />Add to Cart</Button>
+                        </Stack>
+                      </CardActions>
+                    </Card>
+                  </Grid>
+                </>
+              )
+            })}
+          </Grid>
+        </SplideSlide>
+      </Splide>
+
     </>
   )
 }
